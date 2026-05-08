@@ -33,7 +33,7 @@ export default function Intro() {
           >
             <Image
               src={profile.avatar}
-              alt="Ketan portrait"
+              alt="Daksh portrait"
               width="192"
               height="192"
               quality="95"
@@ -91,9 +91,7 @@ export default function Intro() {
         >
           👉
         </motion.span>{" "}
-        I'm a <span className="font-bold">{profile.title}</span> with{" "}
-        <span className="font-bold">{profile.experience}</span> of experience. I
-        enjoy <span className="italic">{profile.likes}</span>.
+        I'm a <span className="font-bold">{profile.title}</span> focused on <span className="italic">{profile.likes}</span>
       </motion.h1>
 
       <motion.div

@@ -51,7 +51,6 @@ const Timeline = ({ data }: Props) => {
 
                   <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]  px-5 py-3 bg-white borderBlack rounded-xl  dark:bg-white/10 dark:text-white/80  shadow">
                     <div className="flex items-center justify-between space-x-2 mb-1">
-                      <div className="font-medium ">{item.location}</div>
                       <time className="text-xs font-medium ">{item.date}</time>
                     </div>
                     <div className="font-bold ">{item.title}</div>

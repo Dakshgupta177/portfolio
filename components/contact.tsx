@@ -10,7 +10,6 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 import { ContactFormInputs } from "@/lib/types";
 import { profile } from "@/lib/data";
-import { MdInfo } from "react-icons/md";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");

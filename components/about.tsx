@@ -18,31 +18,31 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
+
       <p className="mb-3">
-        After graduating with a postgraduate degree in{" "}
-        <span className="font-medium">Computer Science</span>, Upon graduation,
-        I embarked on a journey to become a{" "}
-        <span className="font-medium">full-stack web developer</span>. What
-        drives me most is the thrill of untangling a complex problem and
-        crafting an effective solution. My core stack is{" "}
+        I'm <span className="font-medium">Daksh Gupta</span>, a passionate{" "}
+        <span className="font-medium">Full-Stack JavaScript Developer</span>{" "}
+        focused on building modern, scalable, and user-friendly web
+        applications. Over the past{" "}
+        <span className="font-medium">2+ years</span>, I've been working on
+        full-stack projects involving{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, MongoDB, and React Native
-        </span>{" "}
-        allowing me to build dynamic and engaging applications across the{" "}
-        <span className="italic">web and mobile platforms</span>. I am also
-        familiar with{" "}
-        <span className="font-medium">
-          TypeScript, electronJS, Python, Flask and fastapi
+          React, Next.js, Node.js, TypeScript, MongoDB, PostgreSQL, and Tailwind
+          CSS
         </span>
-        . I am always looking to learn new technologies. I am currently looking
-        for a <span className="font-medium">full-time position</span> as a
-        software developer.
+        . I enjoy solving complex problems, exploring new technologies, and
+        creating smooth digital experiences with clean and modern UI.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies and anime series, or taking walks for a
-        breath of fresh air.
+        Currently, I'm focused on improving my skills in{" "}
+        <span className="font-medium">
+          scalable architectures, AI integrations, backend systems, and modern
+          web development
+        </span>
+        . When I'm not coding, I enjoy exploring new tech ideas, competitive
+        programming, and building projects that challenge my creativity and
+        problem-solving abilities.
       </p>
     </motion.section>
   );

@@ -2,26 +2,28 @@ import cashremitImg from "@/public/cashremit.png";
 import tjdistributorsImg from "@/public/tjdistributors.png";
 
 import { CgWorkAlt } from "react-icons/cg";
-import { FaAws, FaReact, FaRaspberryPi } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import {
+  RiCloudLine,
+  RiCodeSSlashLine,
   RiCss3Line,
   RiDatabase2Line,
-  RiGatsbyLine,
   RiGitBranchLine,
   RiHtml5Line,
   RiJavascriptLine,
+  RiLayout4Line,
   RiNextjsLine,
   RiNodejsLine,
   RiReactjsLine,
+  RiSecurePaymentLine,
+  RiShieldKeyholeLine,
   RiTailwindCssLine,
+  RiTriangleLine,
 } from "react-icons/ri";
 import {
   TbBrandFramerMotion,
-  TbBrandGraphql,
   TbBrandMongodb,
   TbBrandNodejs,
-  TbBrandPython,
-  TbBrandReactNative,
   TbBrandRedux,
   TbBrandSocketIo,
   TbBrandTypescript,
@@ -29,18 +31,19 @@ import {
 
 import React from "react";
 
-const experienceInYears = new Date().getFullYear() - 2017;
+const experienceInYears = new Date().getFullYear() - 2024;
 
 export const profile = {
-  avatar: "https://avatars.githubusercontent.com/u/34062262?v=4",
+  avatar: "/ProfileAvatar.png",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
-  name: "Ketan Patel",
+  name: "Daksh Gupta",
   title: "JavaScript FullStack Developer",
   experience: `${experienceInYears} years`,
-  likes: "building web and mobile apps",
-  resumeLink: `https://www.uvic.ca/career-services/_assets/docs/resume-computer-engineering.pdf`,
-  linkedInLink: "",
-  githubLink: "https://github.com/KtanPatel",
+  likes:
+    "building scalable websites, learning new technologies, and solving complex problems.",
+  resumeLink: `/Daksh_Gupta_Resume.docx`,
+  linkedInLink: "https://www.linkedin.com/in/daksh-gupta-b51143372",
+  githubLink: "https://github.com/Dakshgupta177",
 } as const;
 
 export const links = [
@@ -53,16 +56,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
+    name: "Journey",
+    hash: "#journey",
   },
   {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Contact",
@@ -70,83 +73,111 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const journeyData = [
   {
-    title: "Narola Infotech",
-    location: "Surat, IN",
+    title: "Started Web Development",
     description:
-      "I've started a journey as a full-stack JavaScript developer after completing my Master of Computer Applications.",
+      "Began my journey in web development by learning HTML, CSS, and JavaScript while building small responsive projects and exploring modern web technologies.",
     icon: React.createElement(CgWorkAlt),
-    date: "2018 - 2020",
+    date: "April 2024 - July 2024",
   },
   {
-    title: "Crest Infosystems",
-    location: "Surat, IN",
+    title: "Frontend Development",
     description:
-      "As a backend developer I've been working on various projects. Like starKid, Rightback, and many more.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2021",
-  },
-  {
-    title: "Opash Software",
-    location: "Surat, IN",
-    description:
-      "As a co-founder and CTO of Opash Software, I've been working on various projects and contribute to the success of the company.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2024",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Worldwide",
-    description:
-      "I'm now a full-stack developer working as a freelancer.",
+      "Focused on frontend development using React.js, Tailwind CSS, and Framer Motion to create interactive and responsive user interfaces.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "July 2024 - Oct 2024",
+  },
+  {
+    title: "Full-Stack Development",
+    description:
+      "Expanded into backend development with Node.js, Express.js, MongoDB, and authentication systems while building complete full-stack applications.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Oct 2024 - Jan 2025",
+  },
+  {
+    title: "Advanced Project Building",
+    description:
+      "Built scalable projects including ecommerce platforms, admin dashboards, Stripe integrations, real-time features, and AI-powered search systems.",
+    icon: React.createElement(FaReact),
+    date: "Jan 2025 - July 2025",
+  },
+  {
+    title: "DSA & Problem Solving",
+    description:
+      "Focused on strengthening problem-solving skills by practicing data structures and algorithms, solving coding challenges, and improving logical thinking through consistent practice on coding platforms like Leetcode.",
+    icon: React.createElement(CgWorkAlt),
+    date: "July 2025 - Present",
+  },
+  {
+    title: "Modern Full-Stack Developer",
+    description:
+      "Currently focused on building polished full-stack applications with modern UI/UX, AI integrations, scalable systems, and performance-focused development.",
+    icon: React.createElement(FaReact),
+    date: "Mar 2026 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CashRemit",
+    title: "FlowLedger AI",
     description:
-      "A seamless money transfer platform. CashRemit allows Australian users to transfer AUD to African countries like Nigeria, Ghana, Kenya, etc",
-    tags: ["React", "NodeJS", "MongoDB", "ChakraUI", "Ant Design", "AWS"],
-    imageUrl: cashremitImg,
-    url: "http://cashremit.com.au",
+      "An AI-powered expense tracker to manage daily spending, categorize transactions, and visualize financial insights. Built with scalable backend features like Redis caching, pagination, and rate limiting for performance optimization.",
+    tags: [
+      "React",
+      "NodeJS",
+      "MongoDB",
+      "Redis",
+      "TailwindCSS",
+      "Recharts",
+      "Gemini Ai",
+    ],
+    imageUrl: "/flowledgerai.png",
+    url: "",
+    status: "Currently Building",
   },
   {
-    title: "TJ Distributors",
+    title: "NovaCart AI",
     description:
-      "An inspection app, admin portal, staff will use mobile app to create inspection on site (like school, stadium etc...) and submit, admin will check, approve, proceed, generate report and certificates. ",
-    tags: ["React", "NodeJS", "MongoDB", "React Native"],
-    imageUrl: tjdistributorsImg,
-    url: "",
+      "A full-stack AI-powered eCommerce platform with authentication, Stripe payments, smart product search, cart system, admin dashboard, and AI-based product recommendations.",
+    tags: ["React", "NodeJS", "MongoDB", "Stripe", "TailwindCSS", "OpenAI"],
+    imageUrl: "/novacart.png",
+    url: "https://e-commerce-full-stack-frontend-gamma.vercel.app/",
+    status: "Live",
+  },
+  {
+    title: "StreamVerse",
+    description:
+      "A modern movie streaming platform inspired by JioCinema with movie browsing, category filtering, responsive UI, and video previews using TMDB API.",
+    tags: ["React", "Next.js", "TailwindCSS", "TMDB API"],
+    imageUrl: "/streamverse.png",
+    url: "https://streamverse-87ux.vercel.app/",
+    status: "Live",
   },
 ] as const;
 
 export const skillsData = [
-  { name: "HTML", icon: RiHtml5Line },
-  { name: "CSS", icon: RiCss3Line },
+  { name: "HTML5", icon: RiHtml5Line },
+  { name: "CSS3", icon: RiCss3Line },
   { name: "JavaScript", icon: RiJavascriptLine },
   { name: "TypeScript", icon: TbBrandTypescript },
-  { name: "React", icon: RiReactjsLine },
+  { name: "React.js", icon: RiReactjsLine },
   { name: "Next.js", icon: RiNextjsLine },
-  { name: "NodeJS", icon: RiNodejsLine },
-  { name: "React Native", icon: TbBrandReactNative },
+  { name: "Redux Toolkit", icon: TbBrandRedux },
   { name: "Framer Motion", icon: TbBrandFramerMotion },
-  { name: "Git", icon: RiGitBranchLine },
-  { name: "Tailwind", icon: RiTailwindCssLine },
+  { name: "Tailwind CSS", icon: RiTailwindCssLine },
+  { name: "Node.js", icon: RiNodejsLine },
+  { name: "Express.js", icon: TbBrandNodejs },
+  { name: "Socket.IO", icon: TbBrandSocketIo },
   { name: "MongoDB", icon: TbBrandMongodb },
-  { name: "Redux", icon: TbBrandRedux },
-  { name: "Gatsby", icon: RiGatsbyLine },
-  { name: "GraphQL", icon: TbBrandGraphql },
-  { name: "Express", icon: TbBrandNodejs },
-  { name: "Socket IO", icon: TbBrandSocketIo },
   { name: "PostgreSQL", icon: RiDatabase2Line },
-  { name: "Python", icon: TbBrandPython },
-  { name: "Flask", icon: TbBrandPython },
-  { name: "FastAPI", icon: TbBrandPython },
-  { name: "AWS", icon: FaAws },
-  { name: "Raspberry Pi", icon: FaRaspberryPi },
+  { name: "Redis", icon: RiDatabase2Line },
+  { name: "JWT Auth", icon: RiShieldKeyholeLine },
+  { name: "Stripe", icon: RiSecurePaymentLine },
+  { name: "Git & GitHub", icon: RiGitBranchLine },
+  { name: "Vercel", icon: RiTriangleLine },
+  { name: "Render", icon: RiCloudLine },
+  { name: "REST APIs", icon: RiCodeSSlashLine },
+  { name: "Responsive Design", icon: RiLayout4Line },
   { name: "...and more", icon: React.Fragment },
 ] as const;

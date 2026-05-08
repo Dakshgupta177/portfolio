@@ -3,20 +3,20 @@ import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import SectionHeading from "./section-heading";
 import Timeline from "./timeline";
-import { experiencesData } from "@/lib/data";
+import { journeyData } from "@/lib/data";
 
-const Experience = () => {
-  const { ref } = useSectionInView("Experience");
+const Journey = () => {
+  const { ref } = useSectionInView("Journey", 0.5);
   return (
     <section
-      id="experience"
+      id="journey"
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My experience</SectionHeading>
-      <Timeline data={experiencesData} />
+      <SectionHeading>My journey</SectionHeading>
+      <Timeline data={journeyData} />
     </section>
   );
 };
 
-export default Experience;
+export default Journey;

@@ -33,9 +33,9 @@ export const sendEmail = async ({
       error: "Invalid sender name",
     };
   }
-  if (validateLength(message, 20, 5000).error) {
+  if (validateLength(message, 10, 5000).error) {
     return {
-      error: "Invalid message",
+      error: "Invalid message Length of the message should be between 10 and 5000 characters",
     };
   }
 
