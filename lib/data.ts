@@ -34,7 +34,7 @@ import React from "react";
 const experienceInYears = new Date().getFullYear() - 2024;
 
 export const profile = {
-  avatar: "/ProfileAvatar.png",
+  avatar: "/profileavatar.png",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
   name: "Daksh Gupta",
   title: "JavaScript FullStack Developer",
