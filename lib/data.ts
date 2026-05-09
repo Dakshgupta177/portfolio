@@ -1,6 +1,3 @@
-import cashremitImg from "@/public/cashremit.png";
-import tjdistributorsImg from "@/public/tjdistributors.png";
-
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import {
@@ -41,7 +38,7 @@ export const profile = {
   experience: `${experienceInYears} years`,
   likes:
     "building scalable websites, learning new technologies, and solving complex problems.",
-  resumeLink: `/Daksh_Gupta_Resume.docx`,
+  resumeLink: `https://drive.google.com/file/d/11Tnjijzp9feZiFVxXb0FfaRNY2fjqeN0/view?usp=sharing`,
   linkedInLink: "https://www.linkedin.com/in/daksh-gupta-b51143372",
   githubLink: "https://github.com/Dakshgupta177",
 } as const;
