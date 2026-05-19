@@ -38,7 +38,7 @@ export const profile = {
   experience: `${experienceInYears} years`,
   likes:
     "building scalable websites, learning new technologies, and solving complex problems.",
-  resumeLink: `https://drive.google.com/file/d/11Tnjijzp9feZiFVxXb0FfaRNY2fjqeN0/view?usp=sharing`,
+  resumeLink: `https://drive.google.com/file/d/13ogfNHaG7Ie3fiUcaI10Wryc578q7XvY/view?usp=sharing`,
   linkedInLink: "https://www.linkedin.com/in/daksh-gupta-b51143372",
   githubLink: "https://github.com/Dakshgupta177",
 } as const;
